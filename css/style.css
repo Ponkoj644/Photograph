@@ -1,0 +1,397 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --primary-color: #15a4fa;
+  --bg-color: #f9f9f9;
+  --white-color: #ffffff;
+  --text-paragraph: #e6e6e6;
+  --text-title: #f9f9f9;
+  --text-white: #ffffff;
+  /* Font */
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f8f8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header part start */
+/* navbar animation start */
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+.toggoler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #693923;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.middle-bar {
+  margin-top: 0;
+}
+
+/* when click */
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+  margin-top: 0;
+  transform: rotate(-135deg);
+}
+/* state when the navbar is collapsed */
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -15px;
+  transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  padding: 3px;
+  background: #693923;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 15px;
+  transform: rotate(0deg);
+}
+/* navbar animation  end */
+
+.navbar .navbar-brand img {
+  width: 60px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #0e0e0d;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: 0.3s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #693923;
+}
+
+.navbar-light .navbar-nav .nav-link i {
+  visibility: hidden;
+}
+.navbar-light .navbar-nav .nav-link:hover i {
+  visibility: visible;
+}
+/* Header part end */
+
+/* Banner section */
+.banner {
+  background-image: url(../img/bannerimg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hg {
+  height: 90vh;
+}
+.banner h1 {
+  color: var(--text-title);
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.banner span {
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: aquamarine;
+  margin: auto;
+}
+.banner p {
+  color: var(--text-paragraph);
+  margin: 10px 0;
+  font-size: 18px;
+}
+/* Banner section end */
+
+/* additional css */
+.hidden {
+  visibility: hidden;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #535353;
+}
+.para {
+  color: #8b8b8b;
+  margin: 10px 0px;
+}
+/* additional css end */
+
+/* Servic section start */
+.service {
+}
+.service h6 {
+  color: #393939;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.service h5 {
+  color: #393939;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+.service .service-content p {
+  margin: 10px 10px 20px 10px;
+}
+.btn-info:focus {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+/* .service .btn-info:active {
+  background-color: transparent;
+} */
+/* Servic section end */
+
+/* Instagram section */
+.instagram {
+  background-color: #272727;
+}
+.instagram h6 {
+  color: var(--text-title);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.instagram button {
+  background-color: transparent;
+  border-color: rgb(156, 156, 156);
+  font-size: 14px;
+  color: rgb(156, 156, 156);
+  transition: 0.4s all ease-in-out;
+  margin: 15px 0;
+}
+.instagram button:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.instagram button i {
+  margin-right: 8px;
+}
+/* Instagram section end */
+
+/* Journal section start */
+.journal {
+}
+.journal h1 {
+  font-size: 18px;
+  color: #393939;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.journal .journal-item {
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.journal .journal-item:hover h5 {
+  font-weight: 600;
+}
+
+.journal .journal-item h5 {
+  font-size: 16px;
+  color: #393939;
+  /* font-weight: 600; */
+  text-transform: capitalize;
+  text-align: center;
+  /* margin-top: 5px; */
+  margin-bottom: 5px;
+}
+.journal .journal-item p {
+  color: #8b8b8b;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px;
+}
+.journal .journal-content img {
+  width: 100%;
+}
+.journal .journal-content p {
+  text-align: left;
+  /* margin-left: 20px; */
+  margin: 10px 20px;
+}
+.journal .journal-content a {
+  text-decoration: none;
+  color: #272727;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+.journal .journal-content a:hover {
+  font-weight: 600;
+}
+
+/* About me section */
+.aboutme {
+}
+.aboutme h1 {
+  color: #393939;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutme .about-me img {
+  width: 100%;
+}
+.about-me .mycontent {
+  margin-left: 10px;
+  text-align: left;
+}
+.about-me .mycontent p {
+  font-size: 15px;
+  color: #393939;
+}
+.my-service {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+}
+.service-logo {
+}
+.service-logo i {
+  font-size: 25px;
+  color: #52bdff;
+}
+.service-text {
+  padding: 0 15px;
+}
+.service-text h5 {
+  color: #393939;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.service-text p {
+  color: #393939;
+  font-size: 14px;
+  margin: 5px 0;
+}
+/* About me section end */
+
+/* Footer section start */
+
+.footer {
+  background-color: #272727;
+  /* height: 30vh; */
+}
+.footer .get-in-touch h2 {
+  color: #fff;
+  font-size: 18px;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+.footer .get-in-touch p {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer .get-in-touch ul {
+  margin: 0;
+  padding: 0;
+}
+.footer .get-in-touch ul li {
+  color: var(--text-white);
+  font-size: 14px;
+}
+.footer .get-in-touch ul li i {
+  color: var(--text-title);
+  font-size: 16px;
+  margin: 5px 10px;
+}
+.footer .get-in-touch ul li a {
+  color: var(--text-title);
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+.footer .get-in-touch ul li a:hover {
+  color: rgb(134, 134, 134);
+}
+.footer .get-in-touch img {
+  width: 30%;
+}
+/* Footer section end */
+
+/* copyright section */
+.copyright {
+  background-color: #272727;
+  width: 100%;
+}
+.copyright h6 {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 5px 0;
+}

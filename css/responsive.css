@@ -1,0 +1,83 @@
+/* Medium device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-light .navbar-toggler {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin-left: 0px;
+    /* text-align: end; */
+  }
+  .navbar-light .navbar-nav .nav-link i {
+    display: none;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+
+  .footer .get-in-touch img {
+    width: 50%;
+  }
+}
+/* Small device  */
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar-light .navbar-toggler {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .navbar-light .navbar-nav .nav-link i {
+    display: none;
+  }
+
+  .footer .get-in-touch img {
+    width: 30%;
+  }
+}
+/*Extra Small device */
+@media (min-width: 200px) and (max-width: 575px) {
+  .navbar-light .navbar-toggler {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin-left: 0px;
+    text-align: end;
+  }
+  .navbar-light .navbar-nav .nav-link i {
+    display: none;
+  }
+  .banner h1 {
+    font-size: 25px;
+  }
+  .banner p {
+    font-size: 15px;
+  }
+  .about-me {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutme h1 {
+    text-align: center;
+    border-top: 1px solid #8b8b8b;
+    border-bottom: 1px solid #8b8b8b;
+  }
+  .about-me .mycontent p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .my-service {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .service-logo {
+    margin-top: 10px;
+  }
+}
